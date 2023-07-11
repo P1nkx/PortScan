@@ -20,7 +20,7 @@ function comprovarPort(){
 
 # Inici
 trap ctrl_c INT
-declare -a ports=($(seq 1 65635))
+declare -a ports=($(seq 1 65535))
 
 if [ $1 ];then
     for port in ${ports[@]};do
